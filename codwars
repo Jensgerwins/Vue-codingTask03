@@ -1,0 +1,40 @@
+function alphabetWar(fight) {
+    const leftSide = [
+        ["w", 4],
+        ["p", 3],
+        ["b", 2],
+        ["s", 1],
+    ];
+
+    const RightSide = [
+        ["m", 4],
+        ["q", 3],
+        ["d", 2],
+        ["z", 1],
+    ];
+
+    let countLeft = 0;
+    let countRight = 0;
+
+    if (fight.toLowerCase() !== fight) {
+        console.log("Hat großbuchstaben");
+        return;
+    }
+
+    for (let i = 0; i < fight.length; i++) {
+        console.log(fight[i]);
+    }
+}
+
+console.log(alphabetWar("abnZkP"));
+console.log(alphabetWar("abnzkp"));
+
+
+
+
+
+}
+console.log(alphabetWar("z"), "Right side wins!");
+console.log(alphabetWar("zdqmwpbs"), "Let's fight again!");
+console.log(alphabetWar("zzzzs"), "Right side wins!");
+console.log(alphabetWar("wwwwww"), "Left side wins!");
